@@ -5,10 +5,17 @@ import java.io.*;
  {  
  public static void main(String[] args)
    { 
-            int i;
-           for(i=1900;i<=2020;i++)
-            {  if(i%4==0)
-                   System.out.println(i);
-              }
+            int i,n;
+            Scanner s=new Scanner(System.in);
+            System.out.println("Enter the year:");
+            n=s.nextInt();
+                if(n%4==0)
+                {
+                   System.out.println("Leap year" +n);
+                }
+                else 
+                {
+                   System.out.println("Not a Leap Year" +n);
+                }
      }
 }  
